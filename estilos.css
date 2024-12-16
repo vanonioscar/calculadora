@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4a4949;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+.calculadora h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.pantalla {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton, .operador {
+    height: 70px;
+    font-size: 20px;    
+    border: none;
+    box-shadow: 20px 10px 10px black;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+    
+}
+
+.boton {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.boton:hover {
+    background-color: #d18888;
+}
+
+.operador {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.operador:hover {
+    background-color: #cabba8;    
+}
+
+.boton[value="="] {
+    /*grid-column: span 2;*/
+    background-color: #4caf50;
+    color: white;
+}
+
+.boton[value="="]:hover {
+    background-color: #aab1aa;
+}
+
+.boton[value="C"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.boton[value="C"]:hover {
+    background-color: #2a0603;
+}
